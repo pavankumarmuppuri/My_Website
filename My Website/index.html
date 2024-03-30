@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>MY WEBSITE</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">Pavan</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+            <li><a href="#" onclick="scrollToSection(event, 'home')">Home</a></li>
+            <li><a href="#" onclick="scrollToSection(event, 'about')">About</a></li>
+            <li><a href="#" onclick="scrollToSection(event, 'skills')">Skills</a></li>
+            <li><a href="#" onclick="scrollToSection(event, 'projects')">Projects</a></li>
+            <li><a href="#" onclick="scrollToSection(event, 'contact')">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section" id="home">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">HELLO</p>
+          <h1 class="title">
+            I'm <span>Pavan<br />a</span> Front-End Web Developer
+          </h1>
+          <p class="description">
+            Welcome to my portfolio! I'm Pavan, a skilled and
+            creative front-end web developer with a passion for creating beautiful,
+            responsive, and user-friendly websites. 
+          </p>
+        </div>
+        <div class="image">
+          <img src="WhatsApp Image 2024-01-05 at 08.10.36.jpeg" alt="profile" />
+        </div>
+      </div>
+    </section>
+    <section class="section" id="about">
+        <div class="section__container">
+          <div class="content">
+            <p class="subtitle">HELLO</p>
+            <h1 class="title">
+              I'm <span>Pavan<br /></span> About me :
+            </h1>
+            <p class="description">
+                I recently graduated from Narasaraopeta Engineering College in the stream
+                of Electronics and Communication Engineering with a CGPA of 8.38. My intermediate
+                is from TS Reddy Junior College and My Schooling is from St.Ann's English Medium School.
+            </p>
+          </div>
+          <div class="image">
+            <img src="WhatsApp Image 2024-01-05 at 08.10.36.jpeg" alt="profile" />
+          </div>
+        </div>
+    </section>
+    <section class="section" id="skills">
+        <div class="section__container">
+          <div class="content">
+            <p class="subtitle">HELLO</p>
+            <h1 class="title">
+              My <span>Skills </span> are
+              
+            </h1>
+            <p class="description">
+                HTML5<br/>
+                CSS<br/>
+                JavaScript<br/>
+                BootStrap<br/>
+            </p>
+          </div>
+          <div class="image">
+            <img src="WhatsApp Image 2024-01-05 at 08.10.36.jpeg" alt="profile" />
+          </div>
+        </div>
+    </section>
+    <section class="section" id="projects">
+        <div class="section__container">
+          <div class="content">
+            <p class="subtitle">HELLO</p>
+            <h1 class="title">
+              My <span>Projects </span> are
+              
+            </h1>
+            <p class="description">               
+                Portfolio Website<br/>
+                QR Code Generator<br/>
+                Calculator<br/>
+                To Do List<br/>
+                Virtual Keyboard<br/>
+                Login Form<br/>                
+            </p>
+          </div>
+          <div class="image">
+            <img src="WhatsApp Image 2024-01-05 at 08.10.36.jpeg" alt="profile" />
+          </div>
+        </div>
+    </section>
+    <section class="section" id="contact">
+        <div class="section__container">
+          <div class="content">
+            <p class="subtitle">HELLO</p>
+            <h1 class="title">
+              My <span>Contact </span> info :
+              
+            </h1>
+            <p class="description">               
+                Mobile : <br/>
+                Email : <br/>
+                                
+            </p>
+          </div>
+          <div class="image">
+            <img src="WhatsApp Image 2024-01-05 at 08.10.36.jpeg" alt="profile" />
+          </div>
+        </div>
+    </section>
+    <script>
+        function scrollToSection(event, sectionId) { 
+            event.preventDefault();
+            var section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('check').checked = false; // Close the navbar on mobile after click
+        }
+    </script>
+  </body>
+</html>
